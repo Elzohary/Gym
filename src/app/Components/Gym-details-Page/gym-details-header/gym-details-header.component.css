@@ -1,0 +1,22 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:  linear-gradient(to top, #8C1BFA, #5213C6);
+
+    min-height: 250px;
+}
+
+.gymImage {
+    max-width: 100px;
+    border-radius: 9999px ;
+}
+
+.becomeMemberBtn {
+    transform: scale(1.5);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,37 @@
+.but {
+    width: 60%;
+    border: 2px solid #00b237;
+    color: #00b237;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+img {
+    object-fit: cover;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.reviewCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+}
+

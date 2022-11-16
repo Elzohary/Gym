@@ -1,0 +1,47 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.main-input-group {
+    height: 60px !important;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+}
+
+.search-input {
+    border-radius: 15px;
+}
+
+.switch-btn {
+    width: 22%;
+    height: 60px;
+    padding: 10px;
+    background-color: #3D10BA;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+.searchInput {
+    border: none;
+    width: 50%;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.FindBtn {
+    background-color: #F21E3C;
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
+
+.filterBtn
+{
+    border: none;
+    background: white;
+}

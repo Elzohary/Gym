@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+.mainCanvas {
+    min-height: 100vh;
+    min-width: 100vh;
+    background: linear-gradient(to top,#8719F2, #5614CF);
+}

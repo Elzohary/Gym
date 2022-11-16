@@ -1,0 +1,16 @@
+<app-main-bar
+        class="mainBar" 
+        (ListViewStatus)="onViewChange($event)">
+    </app-main-bar>
+
+<div class="container gymList">
+    <div>
+        <app-gym-list *ngIf="isListView == false; else mapView"></app-gym-list>  
+    </div>
+    
+</div>
+
+<ng-template #mapView height="100%" width="100%">
+    <app-map class="map"></app-map>
+</ng-template>  
+

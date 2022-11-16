@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <img src="../../../assets/download (1).png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container d-flex align-items-center">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fs-5" aria-current="page" routerLink="/Home" routerLinkActive="fw-bold">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" routerLink="/Hot-deals" routerLinkActive="fw-bold">HOT DEALS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" routerLink="/Gym-details" routerLinkActive="fw-bold">Gym-details (testing)</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-between">
+                <button class="btn fw-bold fs-5 text-danger" type="submit">العربية</button>
+
+                <form class="d-flex align-items-center justify-content-end w-100" role="search">
+                    <button class="btn fw-bold fs-5 text-danger w-100 signin" type="button" data-bs-toggle="offcanvas" data-bs-target="#signInCanvas" aria-controls="offcanvasTop">SIGN IN</button>
+                    <button class="btn btn-danger w-50" type="button" data-bs-toggle="offcanvas" data-bs-target="#signUpCanvas" aria-controls="offcanvasTop">
+                      SIGN UP</button>
+                  </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- SIGN UP CANVAS-->
+  <div class="offcanvas offcanvas-top mainCanvas" tabindex="-1" id="signUpCanvas" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasTopLabel"><!-- CHOOSE YOUR ACCOUNT --></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <app-sign-up></app-sign-up>
+    </div>
+  </div>
+
+
+    <!-- SIGN IN CANVAS-->
+    <div class="offcanvas offcanvas-top mainCanvas" tabindex="-1" id="signInCanvas" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel"><!-- CHOOSE YOUR ACCOUNT --></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <app-sign-in></app-sign-in>
+      </div>
+    </div>

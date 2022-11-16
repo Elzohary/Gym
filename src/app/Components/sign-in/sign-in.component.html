@@ -1,0 +1,66 @@
+<div class="main">
+    <h2>SIGN IN</h2>
+
+    <div class="content">
+        <div class="signInContainer">
+            <p class="fs-5">CONTINUE WITH FACEBOOK</p>
+        </div>
+
+        <div class="signInContainer">
+            <p class="fs-5">CONTINUE WITH TWITTER</p>
+        </div>
+
+        <div class="signInContainer">
+            <p class="fs-5">CONTINUE WITH GOOGLE</p>
+        </div>
+
+        <div class="signInContainer">
+            <p class="fs-5">CONTINUE WITH APPLE</p>
+        </div>
+
+    </div>
+
+    <!-- Line -->
+    <div class="orContainer">
+        <div class="line"> </div>
+        <p>OR</p>
+        <div class="line"> </div>
+    </div>
+
+    <div class="formContent">
+        <form>
+            <label for="phone" class="text-light fs-5 fw-bold">Phone</label>
+            <div class="input-group mb-3" id="phone">
+                <button class="btn btn-outline-light" type="button" id="button-addon1">
+                    <span class="material-symbols-outlined">flag</span>
+                </button>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+        </form>
+
+        <form>
+            <label for="phone" class="text-light fs-5 fw-bold">Password</label>
+            <div class="input-group mb-3" id="phone">
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <button class="btn btn-outline-light" type="button" id="button-addon1">
+                    <span class="material-symbols-outlined" (click)="onIsVisible()" *ngIf="isVisible == true">visibility</span>
+                    <span class="material-symbols-outlined" (click)="onIsVisible()" *ngIf="isVisible == false">visibility_off</span>
+                </button>
+            </div>
+        </form>
+
+        <div class="forgotContainer">
+            <a class="btn fw-bold forgotBtn fs-5" href="#" role="button">Forgot password ?</a>
+        </div>
+
+        <button class="signInBtn">SIGN IN</button>
+
+
+        <div class="dontHaveAcc mb-5">
+            <P class="mx-2">Don’t have an account? </P>
+            <a class="btn forgotBtn" href="#" role="button">Sign Up</a>
+        </div>
+    </div>
+</div>
+
+

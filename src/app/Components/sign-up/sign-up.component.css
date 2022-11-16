@@ -1,0 +1,37 @@
+.main {
+    height: 100%;
+    text-align: center;
+}
+
+H2 {
+    color: white;
+    letter-spacing: 5px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 176px;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 15%);
+    margin: 10px;
+}
+
+.Card:hover {
+    background-color: #F35741;
+}
+
+.content {
+    margin-top: 180px;
+}

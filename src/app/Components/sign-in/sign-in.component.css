@@ -1,0 +1,103 @@
+.main {
+    height: 100%;
+    text-align: center;
+}
+
+H2 {
+    color: white;
+    letter-spacing: 5px;
+}
+
+.signInContainer{
+    background-color: white;
+    width: 35%;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.signInContainer p {
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 15px;
+}
+
+.orContainer p {
+    margin: 0;
+}
+
+.line {
+    height: 1px;
+    width: 14%;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+.formContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.forgotContainer {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+}
+
+.forgotBtn {
+    color: #52C1F7;
+    padding: 0;
+}
+
+
+.signInBtn {
+    width: 25%;
+    height: 50px;
+    color: white;
+    background-color: #F21D3C;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 20px;
+    letter-spacing: 2px;
+}
+
+.dontHaveAcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dontHaveAcc p {
+    margin: 0;
+}
