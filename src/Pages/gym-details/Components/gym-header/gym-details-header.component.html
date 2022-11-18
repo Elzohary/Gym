@@ -1,0 +1,43 @@
+<div class=" mainContainer">
+    <div class="container mainContainer" *ngIf="gym">
+        <h5 class="text-light mt-2 navigate">
+            <a routerLink="/Home" class="HomeBtn">Explore Gym / </a> 
+            <span class="gymName">{{gym.name}}</span>
+        </h5>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <img class="gymImage m-4" [src]="gym.logo_img_url" alt="">
+
+                <div class="info text-light">
+                    <h2>{{gym.name}}</h2>
+                    <p class="fs-4 m-0">
+                        <span class="material-symbols-outlined">where_to_vote</span>
+                        {{gym.district}} 
+                    </p>
+                    <div>
+                        <div class="stars-outer">
+                            <div #stars class="stars-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="becomeMemberBtn">
+                <button class="btn btn-danger px-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#signInCanvas" aria-controls="offcanvasTop">BECOME A MEMBER </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SIGN IN CANVAS-->
+<div class="offcanvas offcanvas-top mainCanvas" tabindex="-1" id="signInCanvas" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasTopLabel"><!-- CHOOSE YOUR ACCOUNT --></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <app-sign-in></app-sign-in>
+    </div>
+  </div>

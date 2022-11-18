@@ -1,21 +1,33 @@
-<div class="main">
+<div class="main" *ngIf="isForgotPassword == true; else forgotPass">
     <h2>SIGN IN</h2>
 
     <div class="content">
         <div class="signInContainer">
-            <p class="fs-5">CONTINUE WITH FACEBOOK</p>
+            <div class="inside">
+                <i class="fa-brands fa-facebook-f fbIcon"></i>
+                <p class="fs-5">CONTINUE WITH FACEBOOK</p>
+            </div>
         </div>
 
         <div class="signInContainer">
-            <p class="fs-5">CONTINUE WITH TWITTER</p>
+            <div class="inside">
+                <i class="fa-brands fa-twitter twitterIcon"></i>
+                <p class="fs-5">CONTINUE WITH TWITTER</p>
+            </div>
         </div>
 
         <div class="signInContainer">
-            <p class="fs-5">CONTINUE WITH GOOGLE</p>
+            <div class="inside">
+                <i class="fa-brands fa-google googleIcon"></i>
+                <p class="fs-5">CONTINUE WITH GOOGLE</p>
+            </div>
         </div>
 
         <div class="signInContainer">
-            <p class="fs-5">CONTINUE WITH APPLE</p>
+            <div class="inside">
+                <i class="fa-brands fa-apple appleIcon"></i>
+                <p class="fs-5">CONTINUE WITH APPLE</p>
+            </div>
         </div>
 
     </div>
@@ -50,7 +62,7 @@
         </form>
 
         <div class="forgotContainer">
-            <a class="btn fw-bold forgotBtn fs-5" href="#" role="button">Forgot password ?</a>
+            <a class="btn fw-bold forgotBtn fs-5" role="button" (click)="onForgotChange()">Forgot password ?</a>
         </div>
 
         <button class="signInBtn">SIGN IN</button>
@@ -58,9 +70,12 @@
 
         <div class="dontHaveAcc mb-5">
             <P class="mx-2">Don’t have an account? </P>
-            <a class="btn forgotBtn" href="#" role="button">Sign Up</a>
+            <a class="btn forgotBtn">Sign Up</a>
         </div>
     </div>
 </div>
 
+<ng-template #forgotPass>
+    <app-forgot-password></app-forgot-password>
+  </ng-template>
 

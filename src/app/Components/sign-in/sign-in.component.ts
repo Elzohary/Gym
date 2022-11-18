@@ -6,16 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
-  
+
+  isForgotPassword: boolean = true;
   isVisible: boolean = true;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
 
   onIsVisible() {
     this.isVisible = !this.isVisible;
+  }
+
+  onForgotChange()
+  {
+    this.isForgotPassword = !this.isForgotPassword;
   }
 
 }

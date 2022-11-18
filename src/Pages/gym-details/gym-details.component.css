@@ -1,0 +1,28 @@
+.List {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid grey; */
+}
+
+.List a {
+    font-size: larger;
+}
+
+a {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+    text-align: center;
+    block-size: 50px;
+}
+
+.List a:hover {
+    font-weight: 800;
+    border-bottom: 4px solid #5313C7;
+    color: #5313C7;
+}
+
+a li:hover {
+    font-weight: 700;
+}

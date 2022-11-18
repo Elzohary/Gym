@@ -7,23 +7,24 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './Components/navigation-bar/navigation-bar.component';
-import { HomeComponent } from './Components/home/home.component';
-import { MainBarComponent } from './Components/main-bar/main-bar.component';
-import { GymListComponent } from './Components/gym-list/gym-list.component';
-import { HotDealsComponent } from './Components/hot-deals/hot-deals.component';
+import { HomeComponent } from '../Pages/home/home.component';
+import { MainBarComponent } from '../Pages/home/Components/main-bar/main-bar.component';
+import { GymListComponent } from '../Pages/home/Components/gym-list/gym-list.component';
+import { HotDealsComponent } from '../Pages/hot-deals/hot-deals.component';
 import { SignInComponent } from './Components/sign-in/sign-in.component';
 import { SignUpComponent } from './Components/sign-up/sign-up.component';
-import { MapComponent } from './Components/map/map.component';
-import { GymDetailsComponent } from './Components/Gym-details-Page/gym-details-MainComponent/gym-details.component';
-import { GymDetailsHeaderComponent } from './Components/Gym-details-Page/gym-details-header/gym-details-header.component';
-import { GymInfoComponent } from './Components/Gym-details-Page/gym-info/gym-info.component';
-import { GymPhotosComponent } from './Components/Gym-details-Page/gym-photos/gym-photos.component';
-import { GymClassesComponent } from './Components/Gym-details-Page/gym-classes/gym-classes.component';
-import { GymPackagesComponent } from './Components/Gym-details-Page/gym-packages/gym-packages.component';
-import { GymReviewsComponent } from './Components/Gym-details-Page/gym-reviews/gym-reviews.component';
+import { MapComponent } from '../Pages/home/Components/map/map.component';
+import { GymDetailsComponent } from '../Pages/gym-details/gym-details.component';
+import { GymDetailsHeaderComponent } from '../Pages/gym-details/Components/gym-header/gym-details-header.component';
+import { GymInfoComponent } from '../Pages/gym-details/Components/gym-info/gym-info.component';
+import { GymPhotosComponent } from '../Pages/gym-details/Components/gym-photos/gym-photos.component';
+import { GymClassesComponent } from '../Pages/gym-details/Components/gym-classes/gym-classes.component';
+import { GymPackagesComponent } from '../Pages/gym-details/Components/gym-packages/gym-packages.component';
+import { GymReviewsComponent } from '../Pages/gym-details/Components/gym-reviews/gym-reviews.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { GoogleMapsModule} from '@angular/google-maps';
 import { GymsService } from './Services/gyms.service';
+import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
 
 
 
@@ -45,7 +46,8 @@ import { GymsService } from './Services/gyms.service';
     GymClassesComponent,
     GymPackagesComponent,
     GymReviewsComponent,
-    FooterComponent
+    FooterComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

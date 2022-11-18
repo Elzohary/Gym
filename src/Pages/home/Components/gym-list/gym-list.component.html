@@ -1,0 +1,20 @@
+<h4>All</h4>
+<div class="container w-100 mt-5 d-flex flex-wrap">
+
+    <div *ngFor="let gym of gyms" [routerLink]="['/Gym-details/',gym.id,'gym-info']">
+        <div class="card btn m-3 p-0" (click)="setGymObject(gym)">
+            <img [src]="gym.logo_img_url" class="card-img-top p-2 card-image" alt="No Image found">
+            <div class="card-body a">
+                <h4 class="card-title fw-bold">{{gym.name}}</h4>
+            </div>
+
+            <div class="footer d-flex justify-content-center" *ngIf="gym.is_hot_deal == true">
+                <h5 class="text-light pt-1">Hot Deals</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+<hr>
+
+<!-- {{gyms | json}} -->

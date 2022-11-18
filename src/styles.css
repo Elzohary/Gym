@@ -4,3 +4,7 @@
     min-width: 100vh;
     background: linear-gradient(to top,#8719F2, #5614CF);
 }
+
+body {
+    scroll-behavior: smooth;
+}

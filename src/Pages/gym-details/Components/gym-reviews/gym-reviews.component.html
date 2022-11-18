@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <button class="but" type="button" data-bs-toggle="offcanvas" data-bs-target="#signInCanvas" aria-controls="offcanvasTop">Add Review</button>
+    </div>
+
+    <div class="mt-5 reviewCard">
+        <div class="mt-3 cardLeft ">
+            <img src="https://fakeimg.pl/300/" alt="">
+
+            <div>
+                <h3>Marwan Ali</h3>
+                <span class="material-symbols-outlined">star</span>
+            </div>
+        </div>
+
+        <p>26/10/2020</p>
+    </div>
+    <hr>
+
+</div>
+
+<!-- SIGN IN CANVAS-->
+<div class="offcanvas offcanvas-top mainCanvas" tabindex="-1" id="signInCanvas" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasTopLabel"><!-- CHOOSE YOUR ACCOUNT --></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <app-sign-in></app-sign-in>
+    </div>
+  </div>

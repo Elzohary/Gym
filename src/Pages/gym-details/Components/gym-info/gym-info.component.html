@@ -1,0 +1,111 @@
+<div class="container">
+    <div class="General-Info my-4" *ngIf="gym">>
+        
+        <!-- GENERAL INFO -->
+        <h4 class="mb-3 fw-bold">General Info</h4>
+        <div class="paddingTopBottom infoMainContainer">
+            <!-- Location -->
+            <div class="infoContainer">
+                <div class="d-flex">
+                    <span class="material-symbols-outlined">where_to_vote</span>
+                    <h5>Location</h5>
+                </div>
+                <p>{{gym.address}}</p>
+            </div>
+
+            <!-- Members Should Be... -->
+            <div class="infoContainer ">
+                <div class="d-flex">
+                    <span class="material-symbols-outlined">male</span>
+                    <h5>Members should be</h5>
+                </div>
+                <p>{{gym.gender_type}}</p>
+            </div>
+
+            <!-- Opening hours -->
+            <div class="infoContainer ">
+                <div class="d-flex">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <h5>Opening hours</h5>
+                </div>
+                <p>Not included in the API response</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ABOUT THE GYM -->
+        <div class="About paddingTopBottom">
+            <h4 class="mb-3 fw-bold">About {{gym.name}}</h4>
+            <p>{{gym.description}}</p>
+        </div>
+
+        <hr>
+
+        <!-- TAGS -->
+        <div class="tags paddingTopBottom">
+            <h4 class="mb-3 fw-bold">Tags</h4>
+            <div class="d-flex">
+                <p>Kids are</p>
+                <p>Kids are</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Facilities -->
+        <div class="Facilities paddingTopBottom" mb-5>
+            <h4 class="mb-3 fw-bold">Facilities</h4>
+
+            <div class="Facilitiescards">
+                <div class=" facilitiesCard m-2">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Free Wi-Fi</p>
+                </div>
+    
+                <div class=" facilitiesCard m-2">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Free Wi-Fi</p>
+                </div>
+
+                <div class=" facilitiesCard m-2">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Free Wi-Fi</p>
+                </div>
+
+                <div class=" facilitiesCard m-2">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Free Wi-Fi</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact Us -->
+        <div class="contact paddingTopBottom">
+            <h4 class="mb-3 fw-bold">Contact Us</h4>
+
+            <div class=" socialIcons">
+                <div>
+                    <a class="btn fa-brands fa-instagram socialIcon"></a>
+                </div>
+                <div class=" socialIcons">
+                    <a class="btn fa-brands fa-twitter socialIcon"></a>
+                </div>
+
+            </div>
+
+            <div class="phoneCard" *ngIf="gym.phone_number">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <p class="m-1 p-0">{{gym.phone_number}}</p>
+            </div>
+
+            <div class="phoneCard" *ngIf="gym.email">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="m-1 p-0">{{gym.email}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>
